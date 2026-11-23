@@ -6,8 +6,9 @@ import './index.css';
 // Register PWA Service Worker for offline access
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
+    const swUrl = `${import.meta.env.BASE_URL}sw.js`;
     navigator.serviceWorker
-      .register('/sw.js')
+      .register(swUrl)
       .then((reg) => {
         console.log('2027 Planner PWA Service Worker registered:', reg.scope);
       })
