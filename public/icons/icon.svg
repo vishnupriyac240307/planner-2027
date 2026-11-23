@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0A1128" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F7FF" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FCD34D" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="innerGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#FFFFFF" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- macOS App Squircle Background -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#38BDF8" stroke-width="4" stroke-opacity="0.3" filter="url(#shadow)" />
+
+  <!-- Subtle Ambient Glow -->
+  <circle cx="256" cy="120" r="140" fill="#38BDF8" opacity="0.2" filter="blur(30px)" />
+
+  <!-- Calendar Card Body -->
+  <g filter="url(#shadow)">
+    <!-- Base Card -->
+    <rect x="96" y="112" width="320" height="300" rx="28" fill="url(#cardGrad)" stroke="#BAE0FF" stroke-width="2" />
+
+    <!-- Calendar Top Header Strip -->
+    <path d="M 96 140 C 96 124.536 108.536 112 124 112 L 388 112 C 403.464 112 416 124.536 416 140 L 416 190 L 96 190 Z" fill="url(#headerGrad)" />
+
+    <!-- Spiral / Binder Rings -->
+    <rect x="160" y="90" width="16" height="42" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+    <rect x="248" y="90" width="16" height="42" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+    <rect x="336" y="90" width="16" height="42" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+
+    <!-- Calendar Month / Brand Title -->
+    <text x="256" y="166" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">
+      PLANNER
+    </text>
+
+    <!-- Prominent "2027" Year Text -->
+    <text x="256" y="295" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="82" font-weight="900" fill="#0C4A6E" text-anchor="middle" letter-spacing="-2">
+      2027
+    </text>
+
+    <!-- Checklist / Progress Dots -->
+    <g transform="translate(146, 335)">
+      <!-- Checkbox 1 -->
+      <circle cx="20" cy="15" r="14" fill="#0284C7" />
+      <path d="M 14 15 L 18 19 L 26 11" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="44" y="9" width="45" height="12" rx="6" fill="#BAE0FF" />
+
+      <!-- Checkbox 2 -->
+      <circle cx="130" cy="15" r="14" fill="#10B981" />
+      <path d="M 124 15 L 128 19 L 136 11" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="154" y="9" width="45" height="12" rx="6" fill="#A7F3D0" />
+    </g>
+  </g>
+
+  <!-- Golden Radiance Sparkle in Top-Right -->
+  <g transform="translate(385, 80) scale(1.1)" filter="url(#innerGlow)">
+    <path d="M 25 0 Q 25 25 50 25 Q 25 25 25 50 Q 25 25 0 25 Q 25 25 25 0 Z" fill="url(#accentGrad)" />
+    <circle cx="25" cy="25" r="5" fill="#FFFFFF" />
+  </g>
+</svg>

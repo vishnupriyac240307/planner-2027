@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0A1128" />
+    </linearGradient>
+    <linearGradient id="cardGradMask" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F7FF" />
+    </linearGradient>
+    <linearGradient id="headerGradMask" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="accentGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FCD34D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full Bleed Background for Maskable Icon -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Centered Scaled Content within 80% Safe Zone (10%-90%) -->
+  <g transform="translate(51, 51) scale(0.8)">
+    <!-- Base Card -->
+    <rect x="96" y="112" width="320" height="300" rx="28" fill="url(#cardGradMask)" stroke="#BAE0FF" stroke-width="2" />
+
+    <!-- Calendar Top Header Strip -->
+    <path d="M 96 140 C 96 124.536 108.536 112 124 112 L 388 112 C 403.464 112 416 124.536 416 140 L 416 190 L 96 190 Z" fill="url(#headerGradMask)" />
+
+    <!-- Spiral / Binder Rings -->
+    <rect x="160" y="90" width="16" height="42" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+    <rect x="248" y="90" width="16" height="42" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+    <rect x="336" y="90" width="16" height="42" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+
+    <!-- Calendar Month / Brand Title -->
+    <text x="256" y="166" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">
+      PLANNER
+    </text>
+
+    <!-- Prominent "2027" Year Text -->
+    <text x="256" y="295" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="82" font-weight="900" fill="#0C4A6E" text-anchor="middle" letter-spacing="-2">
+      2027
+    </text>
+
+    <!-- Checklist / Progress Dots -->
+    <g transform="translate(146, 335)">
+      <circle cx="20" cy="15" r="14" fill="#0284C7" />
+      <path d="M 14 15 L 18 19 L 26 11" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="44" y="9" width="45" height="12" rx="6" fill="#BAE0FF" />
+
+      <circle cx="130" cy="15" r="14" fill="#10B981" />
+      <path d="M 124 15 L 128 19 L 136 11" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="154" y="9" width="45" height="12" rx="6" fill="#A7F3D0" />
+    </g>
+
+    <!-- Golden Radiance Sparkle in Top-Right -->
+    <g transform="translate(385, 80) scale(1.1)">
+      <path d="M 25 0 Q 25 25 50 25 Q 25 25 25 50 Q 25 25 0 25 Q 25 25 25 0 Z" fill="url(#accentGradMask)" />
+      <circle cx="25" cy="25" r="5" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>
