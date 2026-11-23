@@ -1,5 +1,10 @@
 # 2027 Digital Planner | Premium Productivity Dashboard
 
+[![Deploy 2027 Planner to GitHub Pages](https://github.com/vishnupriyac240307/planner-2027/actions/workflows/deploy.yml/badge.svg)](https://github.com/vishnupriyac240307/planner-2027/actions/workflows/deploy.yml)
+
+🌐 **Live Web Application**: [https://vishnupriyac240307.github.io/planner-2027/](https://vishnupriyac240307.github.io/planner-2027/)  
+📦 **GitHub Repository**: [https://github.com/vishnupriyac240307/planner-2027](https://github.com/vishnupriyac240307/planner-2027)
+
 An elegant, modern, personalized **2027 Digital Planner & Life Operating System** designed specifically for high-achieving professionals and students using macOS.
 
 Inspired by a seamless blend of **Notion**, **Google Calendar**, and **digital journal aesthetics**, featuring a blue-themed palette with soft pastel blues, deep navy, subtle lavender accents, rounded cards, and smooth micro-interactions.
